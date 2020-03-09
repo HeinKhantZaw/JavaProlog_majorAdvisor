@@ -1,0 +1,67 @@
+.content_textArea  {
+    -fx-text-fill: #4adede;
+     -fx-font-size: 16px;
+     -jfx-focus-color : #212528;
+     -jfx-unfocus-color : #212528;
+}
+
+.content_textField  {
+    -fx-text-fill: #f7444e;
+    -fx-prompt-text-fill: #4adede;
+    -fx-font-size: 16px;
+    -jfx-focus-color : #f8d90f;
+    -jfx-unfocus-color : #cbe54e;
+}
+
+.title {
+     -fx-fill: #fcf3f3;
+     -fx-font-size: 22px;
+     -fx-font-family:"Helvitica Neue";
+}
+
+.subtitle {
+	-fx-fill: #f9c449;
+	-fx-font-size: 16px;
+	-fx-font-family:"Helvitica Neue";
+}
+
+.button {
+	-fx-text-fill: #eeeeee;
+	-fx-font-size: 13px;
+	-fx-background-color : #4e43e7;
+	-fx-background-radius: 18px;
+	-fx-font-family:"Helvitica Neue";
+}
+
+.interestLevel_comboBox {
+	  -jfx-focus-color : #f8d90f;
+      -jfx-unfocus-color : #cbe54e;
+      -fx-prompt-text-fill: #4adede;
+      -fx-font-size: 16px;
+      
+}
+
+.interestLevel_comboBox .list-cell {
+	-fx-text-fill: #f7444e;
+}
+
+.interestLevel_comboBox .list-view .list-cell 
+{
+
+    /* No alternate highlighting */
+    -fx-background-color: #212528;
+}
+
+
+.interestLevel_comboBox .list-view .list-cell:filled:hover 
+{
+    -fx-background-color: #3b4145;
+}
+
+.interestLevel_comboBox .list-view .list-cell
+{
+    
+    -fx-text-fill: #4adede;
+    -fx-text-inner-color: #4adede;
+}
+

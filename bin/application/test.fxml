@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+
+    <JFXDialog fx:id="dialog">
+        <JFXDialogLayout>
+            <heading>
+                <Label>JFoenix Dialog</Label>
+            </heading>
+            <body>
+                <Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </Label>
+            </body>
+            <actions>
+                <JFXButton fx:id="acceptButton" styleClass="dialog-accept">ACCEPT
+                </JFXButton>
+            </actions>
+        </JFXDialogLayout>
+    </JFXDialog>
+    <VBox alignment="CENTER" maxHeight="713.0" maxWidth="400" prefHeight="713.0" prefWidth="400.0" spacing="20">
+        <JFXButton fx:id="centerButton" prefHeight="30" prefWidth="220" styleClass="dialog-trigger">CENTER
+        </JFXButton>
+        <HBox alignment="CENTER" spacing="20">
+            <JFXButton fx:id="topButton" prefHeight="30" prefWidth="100" styleClass="dialog-trigger">TOP
+            </JFXButton>
+            <JFXButton fx:id="bottomButton" prefHeight="30" prefWidth="100" styleClass="dialog-trigger">BOTTOM
+            </JFXButton>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="20">
+            <JFXButton fx:id="rightButton" prefHeight="30" prefWidth="100" styleClass="dialog-trigger">RIGHT
+            </JFXButton>
+            <JFXButton fx:id="leftButton" prefHeight="30" prefWidth="100" styleClass="dialog-trigger">LEFT
+            </JFXButton>
+        </HBox>
+
+        <JFXButton fx:id="alertButton" prefHeight="30" prefWidth="220" styleClass="dialog-trigger"> MODAL ALERT
+        </JFXButton>
+        <StackPane.margin>
+            <Insets>
+                <top>-200</top>
+            </Insets>
+        </StackPane.margin>
+    </VBox>
+
+</StackPane>

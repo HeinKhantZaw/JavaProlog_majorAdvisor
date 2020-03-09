@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Output_Controller">
+   <children>
+      <AnchorPane prefHeight="850.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css">
+         <children>
+            <JFXTextArea fx:id="majors_TArea" editable="false" focusColor="#212528" layoutX="25.0" layoutY="132.0" prefHeight="104.0" prefWidth="563.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="    1.     Knowledge Engineering&#10;    2.    Software Engineering&#10;    3.    High Performance Computing&#10;    4.    Business Information System" unFocusColor="#212528" />
+            <VBox disable="true" prefHeight="799.0" prefWidth="37.0" />
+            <VBox disable="true" layoutX="588.0" prefHeight="798.0" prefWidth="37.0" />
+            <VBox layoutX="38.0" layoutY="275.0" prefHeight="108.0" prefWidth="550.0">
+               <children>
+                  <Label fx:id="major1_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="Knowledge Engineering" textFill="#f9c449">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="major1_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="KE is a field of AI, creating rules that apply to data in order to imitate the way a human thinks and approaches problems." unFocusColor="#212528">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+            <VBox layoutX="38.0" layoutY="384.0" prefHeight="108.0" prefWidth="550.0">
+               <children>
+                  <Label fx:id="major2_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="Software Engineering" textFill="#f9c449">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="major2_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="SE is a process of analyzing user requirements and then designing, building, and testing software application which will satisfy those requirements." unFocusColor="#212528">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+            <VBox layoutX="38.0" layoutY="493.0" prefHeight="108.0" prefWidth="550.0">
+               <children>
+                  <Label fx:id="major3_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="High Performance Computing" textFill="#f9c449">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="major3_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="HPC is the ability to perform complex calculations at high speeds andparallel processing techniques for solving complex computational problems." unFocusColor="#212528">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+            <VBox layoutX="38.0" layoutY="602.0" prefHeight="108.0" prefWidth="550.0">
+               <children>
+                  <Label fx:id="major4_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="Business Information  System" textFill="#f9c449">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="major4_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="BIS is a set of inter-related procedures using IT infrastructure in a business enterprise to generate and disseminate desired information" unFocusColor="#212528">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+            <HBox layoutX="267.0" layoutY="767.0" prefHeight="41.0" prefWidth="333.0">
+               <children>
+                  <Button fx:id="restart_Btn" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Restart" textFill="#eeeeee">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="done_Btn" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Done" textFill="#eeeeee">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+            <Text fill="#eee4e4" layoutX="61.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="You should choose">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Line endX="422.0" endY="1.52587890625E-5" layoutX="158.0" layoutY="78.0" startX="-100.0" stroke="#ea4492" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

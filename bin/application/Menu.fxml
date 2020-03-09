@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Menu_Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;">
+         <children>
+            <StackPane layoutX="136.0" layoutY="214.0" prefHeight="415.0" prefWidth="345.0">
+               <children>
+                  <Circle fx:id="c1" fill="#2197ff00" radius="147.0" stroke="#1891db" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="c2" fill="TRANSPARENT" layoutX="112.0" layoutY="297.0" radius="99.0" stroke="#1848db" strokeType="INSIDE" strokeWidth="7.0" style="-fx-stroke-dash-array: 40;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="c3" fill="#1f93ff00" layoutX="112.0" layoutY="297.0" radius="50.0" stroke="#14a1ff" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 20;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Circle>
+               </children>
+            </StackPane>
+            <Label layoutX="84.0" layoutY="95.0" text="Major Advising Expert System" textFill="#fcf3f3">
+               <font>
+                  <Font name="Helvetica Neue" size="34.0" />
+               </font>
+            </Label>
+            <HBox layoutX="100.0" layoutY="727.0" prefHeight="41.0" prefWidth="458.0">
+               <children>
+                  <Button fx:id="exit_Btn" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #4e43e7; -fx-background-radius: 18px;" text="Exit" textFill="#eeeeee">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="start_Btn" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #4e43e7; -fx-background-radius: 18px;" text="Start" textFill="#eeeeee">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThirdYearCS_GPA_Controller">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css">
+         <children>
+            <Text fill="#eee4e4" layoutX="24.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Enter Your GPA of  3rd Year (CS)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Line endX="441.0" endY="3.0517578125E-5" layoutX="148.0" layoutY="88.0" startX="-123.0" startY="3.0517578125E-5" stroke="#ea4492" />
+            <VBox alignment="TOP_CENTER" layoutX="24.0" layoutY="172.0" prefHeight="441.0" prefWidth="273.0" style="-fx-border-color: white;">
+               <children>
+                  <Text fill="#eeeaea" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="First Term GPA" textAlignment="CENTER" wrappingWidth="215.9697265625">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="thirdY1T_cs_ai" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Artificial Intelligence" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY1T_cs_em" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Engineering Mathematics" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY1T_cs_an" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Advanced Networking" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY1T_cs_ca" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Computer Architecture" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY1T_cs_sre" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Software Requirement Engineering" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY1T_cs_awt" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Advanced Web Technology" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="310.0" layoutY="172.0" prefHeight="441.0" prefWidth="290.0" style="-fx-border-color: white;">
+               <children>
+                  <Text fill="#eeeaea" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="Second Term GPA" textAlignment="CENTER" wrappingWidth="215.9697265625">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY2T_cs_plp" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Programming Languages Principle" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY2T_cs_co" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Computer Organization" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY2T_cs_lans" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Linear Algebra, Numeric and Statistics" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY2T_cs_mpes" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Management Principle &amp; Engineering Economics" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="thirdY2T_cs_nde" alignment="CENTER" focusColor="#ea4492" prefHeight="45.0" prefWidth="216.0" promptText="Network Design and Engineering" styleClass="content_textField" stylesheets="@../css/confirm.css" unFocusColor="#ea4492">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <Button fx:id="gpa_Btn" layoutX="247.0" layoutY="727.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="GPA Equivalent">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Help-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="continue_Btn" layoutX="432.0" layoutY="727.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
