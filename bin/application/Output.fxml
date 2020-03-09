@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
@@ -13,22 +21,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Output_Controller">
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Output_Controller">
    <children>
       <AnchorPane prefHeight="850.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css">
          <children>
-            <JFXTextArea fx:id="majors_TArea" editable="false" focusColor="#212528" layoutX="25.0" layoutY="132.0" prefHeight="104.0" prefWidth="563.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="    1.     Knowledge Engineering&#10;    2.    Software Engineering&#10;    3.    High Performance Computing&#10;    4.    Business Information System" unFocusColor="#212528" />
+            <JFXTextArea fx:id="majors_TArea" editable="false" focusColor="#212528" layoutX="25.0" layoutY="132.0" prefHeight="104.0" prefWidth="563.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528" />
             <VBox disable="true" prefHeight="799.0" prefWidth="37.0" />
             <VBox disable="true" layoutX="588.0" prefHeight="798.0" prefWidth="37.0" />
             <VBox layoutX="38.0" layoutY="275.0" prefHeight="108.0" prefWidth="550.0">
                <children>
-                  <Label fx:id="major1_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="Knowledge Engineering" textFill="#f9c449">
+                  <Label fx:id="major1_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" textFill="#f9c449">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <JFXTextArea fx:id="major1_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="KE is a field of AI, creating rules that apply to data in order to imitate the way a human thinks and approaches problems." unFocusColor="#212528">
+                  <JFXTextArea fx:id="major1_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>
@@ -37,12 +44,12 @@
             </VBox>
             <VBox layoutX="38.0" layoutY="384.0" prefHeight="108.0" prefWidth="550.0">
                <children>
-                  <Label fx:id="major2_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="Software Engineering" textFill="#f9c449">
+                  <Label fx:id="major2_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" textFill="#f9c449">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <JFXTextArea fx:id="major2_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="SE is a process of analyzing user requirements and then designing, building, and testing software application which will satisfy those requirements." unFocusColor="#212528">
+                  <JFXTextArea fx:id="major2_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>
@@ -51,12 +58,12 @@
             </VBox>
             <VBox layoutX="38.0" layoutY="493.0" prefHeight="108.0" prefWidth="550.0">
                <children>
-                  <Label fx:id="major3_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="High Performance Computing" textFill="#f9c449">
+                  <Label fx:id="major3_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" textFill="#f9c449">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <JFXTextArea fx:id="major3_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="HPC is the ability to perform complex calculations at high speeds andparallel processing techniques for solving complex computational problems." unFocusColor="#212528">
+                  <JFXTextArea fx:id="major3_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>
@@ -65,12 +72,12 @@
             </VBox>
             <VBox layoutX="38.0" layoutY="602.0" prefHeight="108.0" prefWidth="550.0">
                <children>
-                  <Label fx:id="major4_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" text="Business Information  System" textFill="#f9c449">
+                  <Label fx:id="major4_label" prefHeight="26.0" prefWidth="216.0" styleClass="subtitle" stylesheets="@../css/confirm.css" textFill="#f9c449">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <JFXTextArea fx:id="major4_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" text="BIS is a set of inter-related procedures using IT infrastructure in a business enterprise to generate and disseminate desired information" unFocusColor="#212528">
+                  <JFXTextArea fx:id="major4_descrp_TArea" editable="false" focusColor="#212528" prefHeight="61.0" prefWidth="549.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>

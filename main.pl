@@ -38,12 +38,12 @@ prompt_second_first_grade(Subject, Title):-
     write(Title),
     write(": "),
     read(Grade),
-    (Grade = 0 -> end_logo ; assert(second_first_term_grade(Subject, Grade))).  
+    (Grade = 0 -> end_logo ; assert(second_first_term_grade(Subject, Grade))).
 prompt_second_second_grade(Subject, Title):-
     write(Title),
     write(": "),
     read(Grade),
-    (Grade = 0 -> end_logo ; assert(second_second_term_grade(Subject, Grade))).    
+    (Grade = 0 -> end_logo ; assert(second_second_term_grade(Subject, Grade))).
 prompt_third_cs_first_grade(Subject, Title):-
     write(Title),
     write(": "),
@@ -53,7 +53,7 @@ prompt_thrid_cs_second_grade(Subject, Title):-
     write(Title),
     write(": "),
     read(Grade),
-    (Grade = 0 -> end_logo ; assert(third_cs_second_term_grade(Subject, Grade))).  
+    (Grade = 0 -> end_logo ; assert(third_cs_second_term_grade(Subject, Grade))).
 prompt_third_ct_first_grade(Subject, Title):-
     write(Title),
     write(": "),
@@ -78,13 +78,13 @@ interest_instructions:-
     write("4 - Very high"),nl,nl.
 
 
-grade_instructions:- 
+grade_instructions:-   /*** Gives instructions for entering grades ***/
     write("For example, "), nl,
     write("A+, A -> 4.0, A- -> 3.67 "),nl,
     write("B+ -> 3.33, B -> 3.0, B- -> 2.67 "),nl,
     write("C+ -> 2.33, C -> 2.0"),nl,
     write("If you did not pass, enter 0 to quit"),nl,nl.
-    
+
 
 menu:-
     /* Clear existing facts before asking for new ones */
@@ -97,11 +97,10 @@ menu:-
     ask_third_grades(Student_Type),
     ask_interest_level(Student_Type),
     save,
-    show_majors,
-    analyze_majors(Student_Type),nl.
+    show_majors.
 
 ask_second_grades :-
-    
+
     write("Enter the grade points you got in First Term of 2nd Year"),nl,
     grade_instructions,
     prompt_second_first_grade(osf, "Operating Systems Fundamentals"),
@@ -124,14 +123,14 @@ ask_second_grades :-
     prompt_second_second_grade(elp4, "English Language Proficiency IV "),nl,nl,
     write('-------------------------------------------------------------------------------'),nl,nl,
     sleep(0.5).
-ask_third_grades(Student_Type) :- 
+ask_third_grades(Student_Type) :-
     write("Enter the grade points you got in First Term of 3rd Year"),nl,
     prompt_third_cs_first_grade(ai, "Aritificial Intelligence"),
     prompt_third_cs_first_grade(em, "Engineering Mathematics "),
     prompt_third_cs_first_grade(an, "Advanced Networking"),
     prompt_third_cs_first_grade(ca, "Computer Architecture"),
     prompt_third_cs_first_grade(sre, "Software Requirement Engineering"),
-    (Student_Type = "cs", 
+    (Student_Type = "cs",
         prompt_third_cs_first_grade(awt, "Advanced Web Technology"),nl,
         write('-------------------------------------------------------------------------------'),nl,nl,
         write("Enter the grade points you got in Second Term of 3rd Year"),nl,
@@ -141,7 +140,7 @@ ask_third_grades(Student_Type) :-
         prompt_thrid_cs_second_grade(mp_ee, "Management Principles and Engineering Economics"),
         prompt_thrid_cs_second_grade(nd_e, "Network Design and Engineering"),nl,nl
     );
-    (Student_Type = "ct", 
+    (Student_Type = "ct",
         prompt_third_ct_first_grade(ec_s, "Engineering Circuits and Signals"),nl,nl,
         write("Enter the grade points you got in Second Term of 3rd Year"),nl,
         prompt_thrid_cs_second_grade(plp, "Programming Languages Principle"),
@@ -154,7 +153,7 @@ ask_third_grades(Student_Type) :-
 
 ask_interest_level(Student_Type) :-
     interest_instructions,
-    (Student_Type = "cs", 
+    (Student_Type = "cs",
         prompt_interest(business, "Business"),
         prompt_interest(analyzing_data, "Marketing Principles"),
         prompt_interest(programming, "Machine Learning with Data Visualization"),
@@ -165,7 +164,7 @@ ask_interest_level(Student_Type) :-
         prompt_interest(parallel_computing, "Parallel Computing"),
         write('-------------------------------------------------------------------------------'),nl
     );
-    (Student_Type = "ct", 
+    (Student_Type = "ct",
         prompt_interest(telecom_network, "Network Operating Systems"),
         prompt_interest(data_trans, "Broadband Communication and Mobile Networking"),
         prompt_interest(sensors_electronics, "Sensors and Electronics"),
@@ -175,9 +174,9 @@ ask_interest_level(Student_Type) :-
 
 
 help :- write("To start the expert system please type 'start.' and press Enter key").
-start_logo :- 
+start_logo :-
     nl,
-    sleep(0.5),    
+    sleep(0.5),
     write('-------------------------------------------------------------------------------'),nl,
     sleep(0.5),
     write('*******************************************************************************'),nl,
@@ -202,7 +201,7 @@ end_logo :-
     sleep(0.7),
     write('*******************************************************************************'),nl,
     write('-------------------------------------------------------------------------------'),nl,
-    abort. 
+    abort.
 
 show_majors :-
     write('Here is a list of majors'),nl,nl,
@@ -210,23 +209,3 @@ show_majors :-
     write('1. Busines Information System \n2. Software Engineering \n3. Knowledge Engineering \n4. High Performance Computing'),nl,
     write('\nIf you are a CT student, you can choose'),nl,
     write('1. Computer Networking \n2. Embedded Systems\n'),nl.
-
-analyze_majors(Student_Type) :-
-    nl,write('Analyzing Major . . .'),nl, 
-    (Student_Type = "cs", 
-
-        (
-         tree_cs
-        )
-  
-    );
-    (Student_Type = "ct",
-        ( % Analyze major depeding on the interest level using decision tree algorithm
-          tree_ct
-        )
-    );
-    (%If the agent cannot analyze major, show this
-        sleep(1),
-        write('\nSorry I cannot advice the major for you'),nl,nl,
-        quit   
-    ).

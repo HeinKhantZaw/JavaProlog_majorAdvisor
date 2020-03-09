@@ -155,6 +155,7 @@ public class ThirdYearCS_GPA_Controller implements Initializable {
 	            Query secondExecution5 = new Query(secondSub5);
 	            Query secondExecution6 = new Query(secondSub6);
 	            
+	            
 	            if (execution1.hasSolution() && execution2.hasSolution() && execution3.hasSolution() && execution4.hasSolution() && execution5.hasSolution() && execution6.hasSolution()
 		            	 && secondExecution2.hasSolution() && secondExecution3.hasSolution() && secondExecution4.hasSolution() && secondExecution5.hasSolution() && secondExecution6.hasSolution()	
 		            		) {
@@ -163,7 +164,6 @@ public class ThirdYearCS_GPA_Controller implements Initializable {
 				Scene scene = new Scene(root);
 				scene.getStylesheets().add(getClass().getResource("gpa.css").toExternalForm());
 				stage.setScene(scene);
-				
 				
 				stage.setTitle("Major Advisor");
 				stage.setMaximized(true);

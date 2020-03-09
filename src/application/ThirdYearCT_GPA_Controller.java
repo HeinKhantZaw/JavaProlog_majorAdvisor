@@ -131,12 +131,12 @@ public class ThirdYearCT_GPA_Controller implements Initializable {
 	            Query con5 = new Query(connection5);
 	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
 	            
-	            String sub1 = "assert(third_cs_first_term_grade(osf"+","+thirdY1T_ct_ai.getText()+")).";
-	            String sub2 = "assert(third_cs_first_term_grade(cal2"+","+thirdY1T_ct_ai.getText()+")).";
-	            String sub3 = "assert(third_cs_first_term_grade(sma"+","+thirdY1T_ct_ai.getText()+")).";
-	            String sub4 = "assert(third_cs_first_term_grade(b_fis"+","+thirdY1T_ct_ai.getText()+")).";
-	            String sub5 = "assert(third_cs_first_term_grade(bec"+","+thirdY1T_ct_ai.getText()+")).";
-	            String sub6 = "assert(third_cs_first_term_grade(elp3"+","+thirdY1T_ct_ai.getText()+")).";
+	            String sub1 = "assert(third_cs_first_term_grade(ai"+","+thirdY1T_ct_ai.getText()+")).";
+	            String sub2 = "assert(third_cs_first_term_grade(em"+","+thirdY1T_ct_em.getText()+")).";
+	            String sub3 = "assert(third_cs_first_term_grade(an"+","+thirdY1T_ct_an.getText()+")).";
+	            String sub4 = "assert(third_cs_first_term_grade(ca"+","+thirdY1T_ct_ca.getText()+")).";
+	            String sub5 = "assert(third_cs_first_term_grade(sre"+","+thirdY1T_ct_sre.getText()+")).";
+	            String sub6 = "assert(third_cs_first_term_grade(awt"+","+thirdY1T_ct_ecs.getText()+")).";
 	            
 	            Query execution1 = new Query(sub1);
 	            Query execution2 = new Query(sub2);
@@ -144,6 +144,9 @@ public class ThirdYearCT_GPA_Controller implements Initializable {
 	            Query execution4 = new Query(sub4);
 	            Query execution5 = new Query(sub5);
 	            Query execution6 = new Query(sub6);
+	            
+	            
+	            if (execution1.hasSolution() && execution2.hasSolution() && execution3.hasSolution() && execution4.hasSolution() && execution5.hasSolution() && execution6.hasSolution()) {
 				root = FXMLLoader.load(InterestLevel_CT_Controller.class.getResource("InterestLevel_CT.fxml"));
 				Stage stage = new Stage();
 				
@@ -170,7 +173,7 @@ public class ThirdYearCT_GPA_Controller implements Initializable {
 					});
 				});
 				stage.show();
-				
+	            }
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

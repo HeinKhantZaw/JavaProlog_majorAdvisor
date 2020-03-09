@@ -96,33 +96,6 @@ public class InterestLevel_CS_Controller implements Initializable {
 	            String interest7 = "assert(interest(linux_os"+","+il_btit+")).";
 	            String interest8 = "assert(interest(parallel_computing"+","+il_pc+")).";
 	            
-	            String test = "confirm_specific_interest(business"+","+il_b+")";
-	            String test1 = "confirm_specific_interest(analyzing_data"+","+il_mp+")";
-	            String test2 = "confirm_specific_interest(programming"+","+il_mldv+")";
-	            String test3 = "confirm_specific_interest(ood"+","+il_sce+")";
-	            String test4 = "confirm_specific_interest(expert_system"+","+il_is+")";
-	            String test5 = "confirm_specific_interest(algorithms"+","+il_rs+")";
-	            String test6 = "confirm_specific_interest(linux_os"+","+il_btit+")";
-	            String test7 = "confirm_specific_interest(parallel_computing"+","+il_pc+")";
-	            
-	            Query testing = new Query(test);
-	            Query testing1 = new Query(test1);
-	            Query testing2 = new Query(test2);
-	            Query testing3 = new Query(test3);
-	            Query testing4 = new Query(test4);
-	            Query testing5 = new Query(test5);
-	            Query testing6 = new Query(test6);
-	            Query testing7 = new Query(test7);
-	            
-	            testing.hasSolution();
-	            testing1.hasSolution();
-	            testing2.hasSolution();
-	            testing3.hasSolution();
-	            testing4.hasSolution();
-	            testing5.hasSolution();
-	            testing6.hasSolution();
-	            testing7.hasSolution();
-	            
 	            Query execution1 = new Query(interest1);
 	            Query execution2 = new Query(interest2);
 	            Query execution3 = new Query(interest3);

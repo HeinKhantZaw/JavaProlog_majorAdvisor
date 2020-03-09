@@ -1,10 +1,10 @@
 field(business_information_system) :-
     confirm_specific_interest(business, 3),
-    confirm_specific_interest(analyzing_data, 3). 
+    confirm_specific_interest(analyzing_data, 3).  %Threshold for analyzing data must be >= 3 to advice BIS
 
 field(software_engineering) :-
-    confirm_specific_interest(programming, 3), 
-    confirm_specific_interest(ood, 3).  
+    confirm_specific_interest(programming, 3), %Threshold for programming must be >= 3 to advice KE
+    confirm_specific_interest(ood, 3).  %Threshold for ood must be >= 3 to advice KE
 
 field(high_performance_computing) :-
     confirm_specific_interest(linux_os, 3), %Threshold for business must be >= 3 to advice BIS
@@ -61,10 +61,9 @@ field_CS_T3() :-
                 
 
 % Advices on courses one should take
-should_take(X) :-
+should_take(X,Y,Z) :-
     setof(X, can_take(X), Courses),
-    member(X, Courses).
-
+    member(X, Courses),info(X,Y,Z).
 % Define conditions necessary to take given majors
 can_take(business_information_system) :-
     bis_any_meets_threshold(b_fis, dbms, sre, 2.67), %max

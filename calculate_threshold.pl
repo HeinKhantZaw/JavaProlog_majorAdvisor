@@ -40,6 +40,7 @@ confirm_same_interestLevel_CT(I1, I2, I3, I4, Threshold) :-
     interest(I2, InterestLevel2),
     interest(I3, InterestLevel3),
     interest(I4, InterestLevel4),
+
     ((InterestLevel1 = Threshold) -> true),
     ((InterestLevel2 = Threshold) -> true),
     ((InterestLevel3 = Threshold) -> true),

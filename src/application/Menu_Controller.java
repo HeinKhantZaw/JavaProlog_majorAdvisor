@@ -80,6 +80,14 @@ public class Menu_Controller implements Initializable {
 			Parent root;
 			try {
 
+				String connection = "consult('main.pl')";
+	            Query con = new Query(connection);
+	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
+	           
+				String clear = "clear.";
+				Query exec = new Query(clear);
+				System.out.println(clear+" " + (exec.hasSolution()?"success" : "fail"));
+				
 				
 				root = FXMLLoader.load(SecondYear_GPA_Controller.class.getResource("SecondYear_GPA.fxml"));
 				Stage stage = new Stage();

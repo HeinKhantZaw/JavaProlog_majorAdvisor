@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import org.jpl7.Query;
+
 import com.jfoenix.controls.JFXComboBox;
 
 import javafx.fxml.FXML;
@@ -50,6 +52,41 @@ public class InterestLevel_CT_Controller implements Initializable  {
 			getValue_ComboBoxes();
 			Parent root;
 			try {
+				String connection = "consult('main.pl')";
+	            Query con = new Query(connection);
+	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
+	           
+	            String connection1 = "consult('calculate_threshold.pl')";
+	            Query con1 = new Query(connection1);
+	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
+	            
+	            String connection2 = "consult('kb.pl')";
+	            Query con2 = new Query(connection2);
+	            System.out.println(connection2 + "" + (con2.hasMoreSolutions() ? "Success" : "Fail"));
+	           
+	            String connection3 = "consult('major_description.pl')";
+	            Query con3 = new Query(connection3);
+	            System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
+	           
+	            String connection4 = "consult('tree.pl')";
+	            Query con4 = new Query(connection4);
+	            System.out.println(connection4 + "" + (con4.hasMoreSolutions() ? "Success" : "Fail"));
+	           
+	            String connection5 = "consult('user_input.pl')";
+	            Query con5 = new Query(connection5);
+	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
+	            
+				String interest1 = "assert(interest(telecom_network"+","+il_nos+")).";
+	            String interest2 = "assert(interest(data_trans"+","+il_bcmn+")).";
+	            String interest3 = "assert(interest(digital_signal"+","+il_cvdip+")).";
+	            String interest4 = "assert(interest(sensors_electronics"+","+il_se+")).";
+	            
+	            Query execution1 = new Query(interest1);
+	            Query execution2 = new Query(interest2);
+	            Query execution3 = new Query(interest3);
+	            Query execution4 = new Query(interest4);
+	            if (execution1.hasSolution() && execution2.hasSolution() && execution3.hasSolution() && execution4.hasSolution()) {
+				
 				root = FXMLLoader.load(Analyzing_Loader_Controller.class.getResource("Analyzing_Loader.fxml"));
 				Stage stage = new Stage();
 				stage.setScene(new Scene(root));
@@ -71,10 +108,15 @@ public class InterestLevel_CT_Controller implements Initializable  {
 					});
 				});
 				stage.show();
+	            }
 				
-			} catch (IOException e1) {
+			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
+				Alert alert = new Alert(Alert.AlertType.ERROR);
+				alert.setTitle("Error");
+				alert.setContentText("Please fill correct information");
+				alert.showAndWait();
 			}	
 		});
 	}
