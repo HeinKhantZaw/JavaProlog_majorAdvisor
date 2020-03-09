@@ -137,6 +137,7 @@ public class SecondYear_GPA_Controller implements Initializable {
 	            String connection5 = "consult('user_input.pl')";
 	            Query con5 = new Query(connection5);
 	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
+	            
 	          
 	            String sub1 = "assert(second_first_term_grade(osf"+","+secondY1T_os.getText()+")).";
 	            String sub2 = "assert(second_first_term_grade(cal2"+","+secondY1T_cal2.getText()+")).";

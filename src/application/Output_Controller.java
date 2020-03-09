@@ -74,9 +74,9 @@ public class Output_Controller implements Initializable {
         String showMajor = "show_majors.";
         Query execSM = new Query(showMajor);
         execSM.hasSolution();
-		String analyze = "analyze_majors('cs')";
+		String analyze = "tree_cs";
         Query exec = new Query(analyze);
-        if (!exec.hasSolution())
+        if (exec.hasSolution())
         {
         	System.out.println(true);
         }
