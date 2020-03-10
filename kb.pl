@@ -15,13 +15,13 @@ field(knowledge_engineering) :-
     confirm_specific_interest(algorithms, 3). %input neural network
   
 field(computer_networking) :-
-    confirm_specific_interest(telecom_network, 3);
+    confirm_specific_interest(telecom_network, 3),
     confirm_specific_interest(server_management, 3),
     confirm_specific_interest(developing_network_infrastructure, 2);
     confirm_specific_interest(data_trans, 2).
 
 field(embedded_systems) :-
-    confirm_specific_interest(sensors_electronics, 3);
+    confirm_specific_interest(sensors_electronics, 3),
     confirm_specific_interest(circuit_design, 3),
     confirm_specific_interest(microcontrollers, 2);
     confirm_specific_interest(digital_signal, 2).
