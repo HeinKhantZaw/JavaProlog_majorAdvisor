@@ -113,22 +113,6 @@ public class ThirdYearCS_GPA_Controller implements Initializable {
 	            Query con1 = new Query(connection1);
 	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
 	            
-	            String connection2 = "consult('kb.pl')";
-	            Query con2 = new Query(connection2);
-	            System.out.println(connection2 + "" + (con2.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection3 = "consult('major_description.pl')";
-	            Query con3 = new Query(connection3);
-	            System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection4 = "consult('tree.pl')";
-	            Query con4 = new Query(connection4);
-	            System.out.println(connection4 + "" + (con4.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection5 = "consult('user_input.pl')";
-	            Query con5 = new Query(connection5);
-	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
-	            
 	            String sub1 = "assert(third_cs_first_term_grade(ai"+","+thirdY1T_cs_ai.getText()+")).";
 	            String sub2 = "assert(third_cs_first_term_grade(em"+","+thirdY1T_cs_em.getText()+")).";
 	            String sub3 = "assert(third_cs_first_term_grade(an"+","+thirdY1T_cs_an.getText()+")).";

@@ -25,7 +25,7 @@
    <children>
       <AnchorPane prefHeight="850.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css">
          <children>
-            <JFXTextArea fx:id="majors_TArea" editable="false" focusColor="#212528" layoutX="25.0" layoutY="132.0" prefHeight="104.0" prefWidth="563.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528" />
+            <JFXTextArea fx:id="majors_TArea" editable="false" focusColor="#212528" layoutX="38.0" layoutY="132.0" prefHeight="104.0" prefWidth="550.0" styleClass="content_textArea" stylesheets="@../../../../../../../Documents/UIT/Third%20Year/Projects/Prolog/Major%20Advisor/Java%20Source%20Code/Major_Advisor/src/css/confirm.css" unFocusColor="#212528" />
             <VBox disable="true" prefHeight="799.0" prefWidth="37.0" />
             <VBox disable="true" layoutX="588.0" prefHeight="798.0" prefWidth="37.0" />
             <VBox layoutX="38.0" layoutY="275.0" prefHeight="108.0" prefWidth="550.0">

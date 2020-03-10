@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 
 public class InterestLevel_CT_Controller implements Initializable  {
 	
-	int il_nos, il_bcmn, il_cvdip, il_se;
+	int il_nos, il_bcmn, il_cvdip, il_se, il_sm, il_nid, il_mc, il_cd;
 	
  	@FXML
     private Button continue_Btn;
@@ -36,6 +36,18 @@ public class InterestLevel_CT_Controller implements Initializable  {
     
     @FXML
     private JFXComboBox<String> IL_ct_se; //sensors and electronics
+    
+    @FXML
+    private JFXComboBox<String> IL_ct_sm; // server management
+
+    @FXML
+    private JFXComboBox<String> IL_ct_nid; // network infrastructure development
+
+    @FXML
+    private JFXComboBox<String> IL_ct_mc; //micro-controllers
+    
+    @FXML
+    private JFXComboBox<String> IL_ct_cd; // circuit_design
     
     
 
@@ -55,37 +67,27 @@ public class InterestLevel_CT_Controller implements Initializable  {
 				String connection = "consult('main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection1 = "consult('calculate_threshold.pl')";
-	            Query con1 = new Query(connection1);
-	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
-	            
-	            String connection2 = "consult('kb.pl')";
-	            Query con2 = new Query(connection2);
-	            System.out.println(connection2 + "" + (con2.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection3 = "consult('major_description.pl')";
-	            Query con3 = new Query(connection3);
-	            System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection4 = "consult('tree.pl')";
-	            Query con4 = new Query(connection4);
-	            System.out.println(connection4 + "" + (con4.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection5 = "consult('user_input.pl')";
-	            Query con5 = new Query(connection5);
-	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
-	            
+	         
 				String interest1 = "assert(interest(telecom_network"+","+il_nos+")).";
 	            String interest2 = "assert(interest(data_trans"+","+il_bcmn+")).";
 	            String interest3 = "assert(interest(digital_signal"+","+il_cvdip+")).";
 	            String interest4 = "assert(interest(sensors_electronics"+","+il_se+")).";
+	            String interest5 = "assert(interest(server_management"+","+il_sm+")).";
+	            String interest6 = "assert(interest(developing_network_infrastructure"+","+il_nid+")).";
+	            String interest7 = "assert(interest(microcontrollers"+","+il_mc+")).";
+	            String interest8 = "assert(interest(circuit_design"+","+il_cd+")).";
 	            
 	            Query execution1 = new Query(interest1);
 	            Query execution2 = new Query(interest2);
 	            Query execution3 = new Query(interest3);
 	            Query execution4 = new Query(interest4);
-	            if (execution1.hasSolution() && execution2.hasSolution() && execution3.hasSolution() && execution4.hasSolution()) {
+	            Query execution5 = new Query(interest5);
+	            Query execution6 = new Query(interest6);
+	            Query execution7 = new Query(interest7);
+	            Query execution8 = new Query(interest8);
+	            
+	            if (execution1.hasSolution() && execution2.hasSolution() && execution3.hasSolution() && execution4.hasSolution()
+	            	&& execution5.hasSolution() && execution6.hasSolution() && execution7.hasSolution() && execution8.hasSolution()) {
 				
 				root = FXMLLoader.load(Analyzing_Loader_Controller.class.getResource("Analyzing_Loader.fxml"));
 				Stage stage = new Stage();
@@ -155,6 +157,33 @@ public class InterestLevel_CT_Controller implements Initializable  {
 		IL_ct_se.getItems().add(verHigh);
 		
 		
+		IL_ct_sm.getItems().add(none);
+		IL_ct_sm.getItems().add(low);
+		IL_ct_sm.getItems().add(medium);
+		IL_ct_sm.getItems().add(high);
+		IL_ct_sm.getItems().add(verHigh);
+		
+		
+		IL_ct_nid.getItems().add(none);
+		IL_ct_nid.getItems().add(low);
+		IL_ct_nid.getItems().add(medium);
+		IL_ct_nid.getItems().add(high);
+		IL_ct_nid.getItems().add(verHigh);
+		
+		
+		IL_ct_cd.getItems().add(none);
+		IL_ct_cd.getItems().add(low);
+		IL_ct_cd.getItems().add(medium);
+		IL_ct_cd.getItems().add(high);
+		IL_ct_cd.getItems().add(verHigh);
+		
+		
+		IL_ct_mc.getItems().add(none);
+		IL_ct_mc.getItems().add(low);
+		IL_ct_mc.getItems().add(medium);
+		IL_ct_mc.getItems().add(high);
+		IL_ct_mc.getItems().add(verHigh);
+		
 	}
 
 	private void getValue_ComboBoxes() {
@@ -175,6 +204,21 @@ public class InterestLevel_CT_Controller implements Initializable  {
 		String [] arr4 = dummy.split("-");
 		il_se = Integer.parseInt(arr4[1].trim());
 		
+		dummy = IL_ct_sm.getValue();
+		String [] arr5 = dummy.split("-");
+		il_sm = Integer.parseInt(arr5[1].trim());
+		
+		dummy = IL_ct_nid.getValue();
+		String [] arr6 = dummy.split("-");
+		il_nid = Integer.parseInt(arr6[1].trim());
+		
+		dummy = IL_ct_cd.getValue();
+		String [] arr7 = dummy.split("-");
+		il_cd = Integer.parseInt(arr7[1].trim());
+		
+		dummy = IL_ct_mc.getValue();
+		String [] arr8 = dummy.split("-");
+		il_mc = Integer.parseInt(arr8[1].trim());
 	}
 
 }

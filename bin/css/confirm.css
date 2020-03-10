@@ -6,10 +6,10 @@
 }
 
 .content_textField  {
-    -fx-text-fill: #f7444e;
+    -fx-text-fill: #f9c449;
     -fx-prompt-text-fill: #4adede;
     -fx-font-size: 16px;
-    -jfx-focus-color : #f8d90f;
+    -jfx-focus-color : #ea4492;
     -jfx-unfocus-color : #cbe54e;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .interestLevel_comboBox {
-	  -jfx-focus-color : #f8d90f;
+	  -jfx-focus-color : #f9c449;
       -jfx-unfocus-color : #cbe54e;
       -fx-prompt-text-fill: #4adede;
       -fx-font-size: 16px;
@@ -42,7 +42,7 @@
 }
 
 .interestLevel_comboBox .list-cell {
-	-fx-text-fill: #f7444e;
+	-fx-text-fill: #f9c449;
 }
 
 .interestLevel_comboBox .list-view .list-cell 

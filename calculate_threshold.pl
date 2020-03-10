@@ -35,16 +35,24 @@ confirm_same_interestLevel_CS(I1, I2, I3, I4, I5, I6, I7, I8, Threshold) :-
     ((InterestLevel8 = Threshold) -> true).
 
 
-confirm_same_interestLevel_CT(I1, I2, I3, I4, Threshold) :-
+confirm_same_interestLevel_CT(I1, I2, I3, I4,T5,T6,T7,T8 Threshold) :-
     interest(I1, InterestLevel1),
     interest(I2, InterestLevel2),
     interest(I3, InterestLevel3),
     interest(I4, InterestLevel4),
+    interest(I5, InterestLevel1),
+    interest(I6, InterestLevel2),
+    interest(I7, InterestLevel3),
+    interest(I8, InterestLevel4),
 
     ((InterestLevel1 = Threshold) -> true),
     ((InterestLevel2 = Threshold) -> true),
     ((InterestLevel3 = Threshold) -> true),
-    ((InterestLevel4 = Threshold) -> true).
+    ((InterestLevel4 = Threshold) -> true),
+    ((InterestLevel5 = Threshold) -> true),
+    ((InterestLevel6 = Threshold) -> true),
+    ((InterestLevel7 = Threshold) -> true),
+    ((InterestLevel8 = Threshold) -> true).
 
 
 

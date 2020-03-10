@@ -78,13 +78,6 @@ public class Output_Controller implements Initializable {
         Query con3 = new Query(connection3);
         System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
        
-        String connection4 = "consult('tree.pl')";
-        Query con4 = new Query(connection4);
-        System.out.println(connection4 + "" + (con4.hasMoreSolutions() ? "Success" : "Fail"));
-       
-        String showMajor = "show_majors.";
-        Query execSM = new Query(showMajor);
-        execSM.hasSolution();
         String ke = "should_take(knowledge_engineering,X,Y)";
         String se = "should_take(software_engineering,X,Y)";
         String bis = "should_take(business_information_system,X,Y)";
@@ -125,9 +118,15 @@ public class Output_Controller implements Initializable {
         	subjectTitle.add(execES.oneSolution().get("X").toString());
         	subjectDescription.add(execES.oneSolution().get("Y").toString());
             }
+        if(subjectTitle.isEmpty())
+        {
+        	majors_TArea.setText("Sorry I cannot advice the major for you.");
+        }
+        else {
         for(String a : subjectTitle){
         	   majors_TArea.appendText(a + "\n");
         	}
+        }
         switch (subjectDescription.size()) {
 		case 1:
 			major1_label.setText(subjectTitle.get(0));

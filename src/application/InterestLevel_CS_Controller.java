@@ -66,27 +66,7 @@ public class InterestLevel_CS_Controller implements Initializable {
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
 	           
-	            String connection1 = "consult('calculate_threshold.pl')";
-	            Query con1 = new Query(connection1);
-	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
-	            
-	            String connection2 = "consult('kb.pl')";
-	            Query con2 = new Query(connection2);
-	            System.out.println(connection2 + "" + (con2.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection3 = "consult('major_description.pl')";
-	            Query con3 = new Query(connection3);
-	            System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection4 = "consult('tree.pl')";
-	            Query con4 = new Query(connection4);
-	            System.out.println(connection4 + "" + (con4.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection5 = "consult('user_input.pl')";
-	            Query con5 = new Query(connection5);
-	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
-	            
-	            
+	      
 	            String interest1 = "assert(interest(business"+","+il_b+")).";
 	            String interest2 = "assert(interest(analyzing_data"+","+il_mp+")).";
 	            String interest3 = "assert(interest(programming"+","+il_mldv+")).";
