@@ -62,19 +62,19 @@ public class Output_Controller implements Initializable {
 		String CN = "CN is an engineering discipline that aims to study and analyze the communication process among various computing devices or computer systems that are linked, or networked, together to exchange information and share resources.";
 		String ES = "ES is a combination of computer hardware and software, either fixed in capability or programmable, designed for a specific function or functions within a larger system.";
 		
-		String connection = "consult('main.pl')";
+		String connection = "consult('resource/main.pl')";
         Query con = new Query(connection);
         System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
        
-        String connection1 = "consult('calculate_threshold.pl')";
+        String connection1 = "consult('resource/calculate_threshold.pl')";
         Query con1 = new Query(connection1);
         System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
         
-        String connection2 = "consult('kb.pl')";
+        String connection2 = "consult('resource/kb.pl')";
         Query con2 = new Query(connection2);
         System.out.println(connection2 + "" + (con2.hasMoreSolutions() ? "Success" : "Fail"));
        
-        String connection3 = "consult('major_description.pl')";
+        String connection3 = "consult('resource/major_description.pl')";
         Query con3 = new Query(connection3);
         System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
        
@@ -123,8 +123,13 @@ public class Output_Controller implements Initializable {
         	majors_TArea.setText("Sorry I cannot advice the major for you.");
         }
         else {
-        for(String a : subjectTitle){
-        	   majors_TArea.appendText(a + "\n");
+//        for(String a : subjectTitle){
+//        	   majors_TArea.appendText(a + "\n");
+//        	}
+        	for(int i=0;i<subjectTitle.size();i++)
+        	{
+        		int num = i+1;
+        		majors_TArea.appendText(num+". "+subjectTitle.get(i).toString()+"\n");
         	}
         }
         switch (subjectDescription.size()) {
@@ -183,7 +188,6 @@ public class Output_Controller implements Initializable {
 					Platform.exit();
 				}
 			});
-			
 		});
 		
 		restart_Btn.setOnAction( e -> {
@@ -193,10 +197,11 @@ public class Output_Controller implements Initializable {
 				Stage stage = new Stage();
 				stage.setScene(new Scene(root));
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				restart_Btn.getScene().getWindow().hide();
 				stage.setX(350);
+				stage.setY(-10);
 				stage.show();
 				stage.setOnCloseRequest(event -> {
 

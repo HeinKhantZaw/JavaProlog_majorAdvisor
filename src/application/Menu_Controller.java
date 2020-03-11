@@ -80,7 +80,7 @@ public class Menu_Controller implements Initializable {
 			Parent root;
 			try {
 
-				String connection = "consult('main.pl')";
+				String connection = "consult('resource/main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
 	           
@@ -95,9 +95,10 @@ public class Menu_Controller implements Initializable {
 				scene.getStylesheets().add(getClass().getResource("gpa.css").toExternalForm());
 				stage.setScene(scene);
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(350);
+				stage.setY(-10);
 				exit_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {
 

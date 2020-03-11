@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
@@ -13,8 +22,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SecondYear_GPA_Controller">
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SecondYear_GPA_Controller">
    <children>
       <AnchorPane fx:id="anchorPane" prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css">
          <children>
@@ -210,7 +218,7 @@
                   </JFXTextField>
                </children>
             </VBox>
-            <Button fx:id="gpa_Btn" layoutX="247.0" layoutY="727.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="159.0" stylesheets="@../css/confirm.css" text="GPA Equivalent">
+            <Button fx:id="gpa_Btn" layoutX="247.0" layoutY="680.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="159.0" stylesheets="@../css/confirm.css" text="GPA Equivalent">
                <graphic>
                   <ImageView fitHeight="19.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -222,7 +230,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="continue_Btn" layoutX="432.0" layoutY="727.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
+            <Button fx:id="continue_Btn" layoutX="432.0" layoutY="680.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

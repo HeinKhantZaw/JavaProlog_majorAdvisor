@@ -45,9 +45,10 @@ public class Student_dialog_Controller implements Initializable {
 				scene.getStylesheets().add(getClass().getResource("gpa.css").toExternalForm());
 				stage.setScene(scene);
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(350);
+				stage.setY(-10);
 				
 				cs_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {
@@ -81,9 +82,10 @@ public class Student_dialog_Controller implements Initializable {
 				scene.getStylesheets().add(getClass().getResource("gpa.css").toExternalForm());
 				stage.setScene(scene);
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(350);
+				stage.setY(-10);
 				
 				ct_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {

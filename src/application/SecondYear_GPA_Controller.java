@@ -113,7 +113,7 @@ public class SecondYear_GPA_Controller implements Initializable {
 				Query q1 =
 					    new Query(
 					        "consult",
-					        new Term[] {new Atom("main.pl")}
+					        new Term[] {new Atom("resource/main.pl")}
 					    );
 	            System.out.println(q1 + "" + (q1.hasMoreSolutions() ? "Success" : "Fail"));
 	            
@@ -156,10 +156,10 @@ public class SecondYear_GPA_Controller implements Initializable {
 				stage.setScene(scene);
 				
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(450);
-				stage.setY(370);
+				stage.setY(350);
 				continue_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {
 

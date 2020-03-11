@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -11,8 +18,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Analyzing_Loader_Controller">
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Analyzing_Loader_Controller">
    <children>
       <AnchorPane prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;">
          <children>
@@ -276,7 +282,7 @@
                   </VBox>
                </children>
             </HBox>
-            <Button fx:id="continue_Btn" layoutX="432.0" layoutY="727.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
+            <Button fx:id="continue_Btn" layoutX="432.0" layoutY="680.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

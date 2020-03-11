@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
@@ -11,9 +19,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterestLevel_CS_Controller">
+<AnchorPane prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;" stylesheets="@../css/confirm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterestLevel_CS_Controller">
    <children>
-      <Button fx:id="continue_Btn" layoutX="421.0" layoutY="727.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
+      <Button fx:id="continue_Btn" layoutX="421.0" layoutY="680.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" stylesheets="@../css/confirm.css" text="Continue ">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>

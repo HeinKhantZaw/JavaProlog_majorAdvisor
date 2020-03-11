@@ -62,7 +62,7 @@ public class InterestLevel_CS_Controller implements Initializable {
 			getValue_ComboBox();
 			Parent root;
 			try {
-				String connection = "consult('main.pl')";
+				String connection = "consult('resource/main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
 	           
@@ -92,9 +92,10 @@ public class InterestLevel_CS_Controller implements Initializable {
 				Stage stage = new Stage();
 				stage.setScene(new Scene(root));
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(350);
+				stage.setY(-10);
 				continue_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {
 

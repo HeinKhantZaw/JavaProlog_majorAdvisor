@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -11,8 +19,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Menu_Controller">
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Menu_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="620.0" style="-fx-background-color: #212528;">
          <children>
@@ -40,7 +47,7 @@
                   <Font name="Helvetica Neue" size="34.0" />
                </font>
             </Label>
-            <HBox layoutX="100.0" layoutY="727.0" prefHeight="41.0" prefWidth="458.0">
+            <HBox layoutX="100.0" layoutY="680.0" prefHeight="41.0" prefWidth="458.0">
                <children>
                   <Button fx:id="exit_Btn" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #4e43e7; -fx-background-radius: 18px;" text="Exit" textFill="#eeeeee">
                      <cursor>

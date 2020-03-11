@@ -105,11 +105,11 @@ public class ThirdYearCS_GPA_Controller implements Initializable {
 		continue_Btn.setOnAction( e -> {
 			Parent root;
 			try {
-				String connection = "consult('main.pl')";
+				String connection = "consult('resource/main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
 	           
-	            String connection1 = "consult('calculate_threshold.pl')";
+	            String connection1 = "consult('resource/calculate_threshold.pl')";
 	            Query con1 = new Query(connection1);
 	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
 	            
@@ -150,9 +150,10 @@ public class ThirdYearCS_GPA_Controller implements Initializable {
 				stage.setScene(scene);
 				
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(350);
+				stage.setY(-10);
 				
 				continue_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {

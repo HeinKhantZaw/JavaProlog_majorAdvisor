@@ -107,29 +107,13 @@ public class ThirdYearCT_GPA_Controller implements Initializable {
 		continue_Btn.setOnAction( e -> {
 			Parent root;
 			try {
-				String connection = "consult('main.pl')";
+				String connection = "consult('resource/main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
 	           
-	            String connection1 = "consult('calculate_threshold.pl')";
+	            String connection1 = "consult('resource/calculate_threshold.pl')";
 	            Query con1 = new Query(connection1);
 	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
-	            
-	            String connection2 = "consult('kb.pl')";
-	            Query con2 = new Query(connection2);
-	            System.out.println(connection2 + "" + (con2.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection3 = "consult('major_description.pl')";
-	            Query con3 = new Query(connection3);
-	            System.out.println(connection3 + "" + (con3.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection4 = "consult('tree.pl')";
-	            Query con4 = new Query(connection4);
-	            System.out.println(connection4 + "" + (con4.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	            String connection5 = "consult('user_input.pl')";
-	            Query con5 = new Query(connection5);
-	            System.out.println(connection5 + "" + (con5.hasMoreSolutions() ? "Success" : "Fail"));
 	            
 	            String sub1 = "assert(third_cs_first_term_grade(ai"+","+thirdY1T_ct_ai.getText()+")).";
 	            String sub2 = "assert(third_cs_first_term_grade(em"+","+thirdY1T_ct_em.getText()+")).";
@@ -155,9 +139,10 @@ public class ThirdYearCT_GPA_Controller implements Initializable {
 				stage.setScene(scene);
 				
 				stage.setTitle("Major Advisor");
-				stage.setMaximized(true);
+				stage.setMaximized(false);
 				stage.setResizable(false);
 				stage.setX(350);
+				stage.setY(-10);
 				
 				continue_Btn.getScene().getWindow().hide();
 				stage.setOnCloseRequest(event -> {
