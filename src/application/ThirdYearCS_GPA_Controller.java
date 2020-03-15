@@ -108,7 +108,11 @@ public class ThirdYearCS_GPA_Controller implements Initializable {
 				String connection = "consult('main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
-	           
+
+	            String connection1 = "consult('calculate_threshold.pl')";
+	            Query con1 = new Query(connection1);
+	            System.out.println(connection1 + "" + (con1.hasMoreSolutions() ? "Success" : "Fail"));
+	            
 	            String sub1 = "assert(third_cs_first_term_grade(ai"+","+thirdY1T_cs_ai.getText()+")).";
 	            String sub2 = "assert(third_cs_first_term_grade(em"+","+thirdY1T_cs_em.getText()+")).";
 	            String sub3 = "assert(third_cs_first_term_grade(an"+","+thirdY1T_cs_an.getText()+")).";
