@@ -62,11 +62,10 @@ public class InterestLevel_CS_Controller implements Initializable {
 			getValue_ComboBox();
 			Parent root;
 			try {
-				String connection = "consult('resource/main.pl')";
+				String connection = "consult('main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
-	           
-	      
+	               
 	            String interest1 = "assert(interest(business"+","+il_b+")).";
 	            String interest2 = "assert(interest(analyzing_data"+","+il_mp+")).";
 	            String interest3 = "assert(interest(programming"+","+il_mldv+")).";

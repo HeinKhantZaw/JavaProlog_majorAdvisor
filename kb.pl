@@ -3,15 +3,15 @@ field(business_information_system) :-
     confirm_specific_interest(analyzing_data, 3).  %Threshold for analyzing data must be >= 3 to advice BIS
 
 field(software_engineering) :-
-    confirm_specific_interest(programming, 2), %Threshold for programming must be >= 3 to advice KE
+    confirm_specific_interest(programming, 3), %Threshold for programming must be >= 3 to advice KE
     confirm_specific_interest(ood, 3).  %Threshold for ood must be >= 3 to advice KE
 
 field(high_performance_computing) :-
-    confirm_specific_interest(linux_os, 2), %Threshold for business must be >= 3 to advice BIS
+    confirm_specific_interest(linux_os, 3), %Threshold for business must be >= 3 to advice BIS
     confirm_specific_interest(parallel_computing, 3).%Threshold for analyzing data must be >= 3 to advice BIS
     
 field(knowledge_engineering) :-
-    confirm_specific_interest(expert_system, 2),
+    confirm_specific_interest(expert_system, 3),
     confirm_specific_interest(algorithms, 3). %input neural network
   
 field(computer_networking) :-

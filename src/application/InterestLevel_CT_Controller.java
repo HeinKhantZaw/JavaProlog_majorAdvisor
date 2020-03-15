@@ -64,7 +64,7 @@ public class InterestLevel_CT_Controller implements Initializable  {
 			getValue_ComboBoxes();
 			Parent root;
 			try {
-				String connection = "consult('resource/main.pl')";
+				String connection = "consult('main.pl')";
 	            Query con = new Query(connection);
 	            System.out.println(connection + "" + (con.hasMoreSolutions() ? "Success" : "Fail"));
 	         

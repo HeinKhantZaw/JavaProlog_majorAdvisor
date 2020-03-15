@@ -113,7 +113,7 @@ public class SecondYear_GPA_Controller implements Initializable {
 				Query q1 =
 					    new Query(
 					        "consult",
-					        new Term[] {new Atom("resource/main.pl")}
+					        new Term[] {new Atom("main.pl")}
 					    );
 	            System.out.println(q1 + "" + (q1.hasMoreSolutions() ? "Success" : "Fail"));
 	            
