@@ -4,7 +4,7 @@ start:- % Initialization procedures
     reconsult('major_description.pl'),nl,
     reconsult('kb.pl'),nl,
     reconsult('calculate_threshold.pl'),nl,
-    reconsult('tree.pl'),nl,
+
     start_logo,
     clear,
     menu.
