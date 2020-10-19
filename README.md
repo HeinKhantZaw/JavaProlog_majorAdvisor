@@ -57,12 +57,12 @@ advise the suitable major.
 
 ### Advising Step
 
-Finalluy, you can see the suitable major.
+Finally, you can see the suitable major.
 
 ![4rdCS](https://user-images.githubusercontent.com/59479427/96399094-7efa7380-11f3-11eb-948b-87eaa8f58a40.PNG)
 ![CTmajor](https://user-images.githubusercontent.com/59479427/96399070-730eb180-11f3-11eb-9508-aa28d4f6d740.PNG)
 
-## Contributinag
+## Contributing
 
 Please read
 [CONTRIBUTING.md](https://github.com/HeinKhantZaw/prologProject/blob/master/CONTRIBUTING.md)
