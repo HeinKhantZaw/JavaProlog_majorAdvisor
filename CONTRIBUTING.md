@@ -12,8 +12,6 @@ issue trackers, chatrooms, and mailing lists.
 
 ## Contributing Code
 
-$(INSTALL_DEPENDENCIES)
-
 Clone the repo. 
 
 ```
