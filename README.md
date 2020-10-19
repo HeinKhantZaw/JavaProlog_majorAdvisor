@@ -34,13 +34,14 @@ To run this project -install jpl -add jpl to JavaIDE
 
 ### Welcome
 
-![welcome](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_2592189871091614.webp)
+![welcome](https://user-images.githubusercontent.com/59479427/96398745-98e78680-11f2-11eb-96ff-e90a941dfd56.PNG)
 
 ### Enter Your 2nd Year GPA
 
 This program advises major based on GPA and Interest,so 2nd year GPA is also
 needed.
-![2nd year GPA](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_688361715428878.webp)
+
+![2ndGPA](https://user-images.githubusercontent.com/59479427/96399029-583c3d00-11f3-11eb-8ec8-14bbf0f78dbe.PNG)
 
 ### Enter Your 3rd Year GPA and Interest
 
@@ -49,17 +50,17 @@ students. Then you must enter 3rd year GPA and Interest. 3rd Year GPA is needed
 and so is interest level of subjects.Based on those, this program calculated and
 advise the suitable major.
 
-![3rd year CS GPA](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_3396020330512077.webp)
-![3rd year CS interest](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_822657888301556.webp)
-![3rd year CT GPA](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_3434968886621932.webp)
-![3rd year CT interest](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_684040369158102.webp)
+![CSGPA](https://user-images.githubusercontent.com/59479427/96399037-5bcfc400-11f3-11eb-95e5-ce47f398f0e9.PNG)
+![CSinterest](https://user-images.githubusercontent.com/59479427/96399051-62f6d200-11f3-11eb-9cd0-627fe66f53df.PNG)
+![CTGPA](https://user-images.githubusercontent.com/59479427/96399044-5f634b00-11f3-11eb-9216-ba1838d385cf.PNG)
+![CTinterest](https://user-images.githubusercontent.com/59479427/96399054-65f1c280-11f3-11eb-9955-4762da0d4395.PNG)
 
 ### Advising Step
 
 Finalluy, you can see the suitable major.
-![4rd year CS major](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_340807180476096.webp)
-![4rd year CT major](https://github.com/ChitSuThwin/JavaProlog_majorAdvisor/received_989494871569093.webp)
 
+![4rdCS](https://user-images.githubusercontent.com/59479427/96399094-7efa7380-11f3-11eb-948b-87eaa8f58a40.PNG)
+![CTmajor](https://user-images.githubusercontent.com/59479427/96399070-730eb180-11f3-11eb-9508-aa28d4f6d740.PNG)
 ## Contributinag
 
 Please read
@@ -72,3 +73,8 @@ to us.
 This project is licensed under the MIT License - see the
 [LICENSE.md](https://github.com/HeinKhantZaw/prologProject/blob/master/LICENSE)
 file for details
+
+
+
+
+
