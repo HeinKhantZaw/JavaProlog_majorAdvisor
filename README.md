@@ -6,12 +6,12 @@ subject.
 
 ## Table of Contents
 
-- [General Info]
-- [Technology]
-- [Setup]
-- [Screenshot]
-- [Contributing]
-- [License]
+- General Info
+- Technology
+- Setup
+- Screenshot
+- Contributing
+- License
 
 ## General Info
 
