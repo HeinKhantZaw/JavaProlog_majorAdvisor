@@ -46,7 +46,7 @@ To run this project -install jpl -add jpl to JavaIDE
 
 ### Welcome
 
-![welcome](https://user-images.githubusercontent.com/59479427/96398745-98e78680-11f2-11eb-96ff-e90a941dfd56.PNG)
+![welcome](https://raw.githubusercontent.com/NyanSwanAung/JavaProlog_majorAdvisor/master/Demo.gif)
 
 ### Enter Your 2nd Year GPA
 
