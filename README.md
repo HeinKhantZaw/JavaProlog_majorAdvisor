@@ -1,15 +1,27 @@
 # Major Advisor Expert System
 
+## About
+
+  Submitted in 2020, my third year group project at University of Information Technology.
+  
+  <p align="center">
+    <a href="https://github.com/NyanSwanAung">Nyan Swan Aung</a> •
+    <a href="https://github.com/PyiTheinKyaw">Pyi Thein Kyaw </a> •
+    <a href="https://github.com/HeinKhantZaw">Hein Khant Zaw </a>
+  </p>
+
+## Description
+
 This project is written in prolog and java using jpl library. This system advise
-which major should students take according to their GPA and interest level of a
-subject.
+which major should students take according to their GPA and interest level of specific 
+subjects.
 
 ## Table of Contents
 
 - General Info
 - Technology
 - Setup
-- Screenshot
+- Demo
 - Contributing
 - License
 
@@ -30,7 +42,7 @@ This project is built with
 
 To run this project -install jpl -add jpl to JavaIDE
 
-## Screenshot
+## Demo
 
 ### Welcome
 
