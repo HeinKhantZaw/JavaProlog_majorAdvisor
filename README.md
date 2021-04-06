@@ -12,7 +12,7 @@
 
 ## Description
 
-This project is written in prolog and java using jpl library. This system advise
+This project is written in prolog and java using jpl library. This system advises
 which major should students take according to their GPA and interest level of specific 
 subjects.
 
@@ -24,11 +24,6 @@ subjects.
 - Demo
 - Contributing
 - License
-
-## General Info
-
-The project focuses on IT students in order to provide major advising system for
-finding their suitable major depending on their interest and best subjects.
 
 ## Technology
 
@@ -43,6 +38,8 @@ This project is built with
 To run this project -install jpl -add jpl to JavaIDE
 
 ## Demo
+
+![Demo](https://raw.githubusercontent.com/NyanSwanAung/JavaProlog_majorAdvisor/master/demo.gif)
 
 ### Welcome
 
