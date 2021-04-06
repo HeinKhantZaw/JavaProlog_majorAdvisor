@@ -2,8 +2,9 @@
 
 ## About
 
-  Submitted in 2020, my third year group project at University of Information Technology.
-  
+Submitted in 2020, my third year group project at University of Information
+Technology.
+
   <p align="center">
     <a href="https://github.com/NyanSwanAung">Nyan Swan Aung</a> •
     <a href="https://github.com/PyiTheinKyaw">Pyi Thein Kyaw </a> •
@@ -12,9 +13,9 @@
 
 ## Description
 
-This project is written in prolog and java using jpl library. This system advises
-which major should students take according to their GPA and interest level of specific 
-subjects.
+This project is written in prolog and java using jpl library. This system
+advises which major should students take according to their GPA and interest
+level of specific subjects.
 
 ## Table of Contents
 
